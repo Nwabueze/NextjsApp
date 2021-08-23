@@ -2,7 +2,7 @@ import Head from 'next/head'
 import NextLink from 'next/link'
 import Layout from '../components/Layout'
 import { Grid, Card, CardActionArea, Button, CardActions, CardContent, CardMedia, Typography } from '@material-ui/core'
-import data from '../utils/data'
+
 import db from '../utils/db'
 import Product from '../models/Product'
 
@@ -43,7 +43,7 @@ export default function Home(props) {
 export async function getServerSideProps(){
   await db.connect();
   const products = await Product.find({}).lean();
-  //console.log(products);
+  
   await db.disconnect();
 
   return {
