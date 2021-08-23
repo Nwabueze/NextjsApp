@@ -1,6 +1,8 @@
 import mongoose from 'mongoose';
 
 var conn = {};
+
+/* MONGO_CONN_STR is now use for the e-commerce demo */
 async function connect(){
    
     if(conn.isConnected){
@@ -16,7 +18,9 @@ async function connect(){
         await mongoose.disconnect();
     }
 
-    const con = await mongoose.connect(process.env.LOCAL_MONGODB_URI, {
+    const LOCAL = process.env.LOCAL_MONGODB_URI;
+    const LIVE = process.env.MONGO_CONN_STR;
+    const con = await mongoose.connect(LIVE, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true
