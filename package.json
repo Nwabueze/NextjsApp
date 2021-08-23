@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
+    "aws-sdk": "^2.973.0",
     "js-cookie": "^3.0.0",
     "mongodb-client-encryption": "^1.2.6",
     "mongoose": "^5.13.7",
