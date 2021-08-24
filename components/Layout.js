@@ -56,7 +56,7 @@ export default function Layout({ title, description, children }){
                     <Toolbar>
                         <NextLink href="/" passHref>
                             <Link>
-                                <Typography>Demo</Typography>
+                                <Typography>Demo App</Typography>
                             </Link>
                         </NextLink>
                         <div className={classes.grow}></div>
