@@ -1,0 +1,20 @@
+{
+    "name": "NextEcom",
+    "short_name": "NEC",
+    "lang": "en-US",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#203040",
+    "icons": [
+      {
+        "src": "https://cdn3.iconfinder.com/data/icons/shinysocialball/512/Technorati_512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "https://monteirolobato.com.br/public/assets/front/images/icons/android-icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }

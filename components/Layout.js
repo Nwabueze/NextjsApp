@@ -47,9 +47,44 @@ export default function Layout({ title, description, children }){
     return (
         <div>
             <Head>
-                <title>{title ? `${title} - ` : `Test E-commerce App`}</title>
-                {description && <meta name="description" content={description} />}
-            </Head>
+    <link rel="manifest" href="manifest.json">
+    </link>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    </meta>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    </meta>
+    <meta name="application-name" content="NEC">
+    </meta>
+    <meta name="apple-mobile-web-app-title" content="NEC">
+    </meta>
+    <meta name="theme-color" content="#203040">
+    </meta>
+    <meta name="msapplication-navbutton-color" content="#203040">
+    </meta>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    </meta>
+    <meta name="msapplication-starturl" content="/">
+    </meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </meta>
+
+    <link rel="icon" type="image/png" sizes="512x512"
+        href="https://cdn3.iconfinder.com/data/icons/shinysocialball/512/Technorati_512x512.png">
+    </link>
+    <link rel="apple-touch-icon" type="image/png" sizes="512x512"
+        href="https://cdn3.iconfinder.com/data/icons/shinysocialball/512/Technorati_512x512.png">
+    </link>
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="https://monteirolobato.com.br/public/assets/front/images/icons/android-icon-192x192.png">
+    </link>
+    <link rel="apple-touch-icon" type="image/png" sizes="192x192"
+        href="https://monteirolobato.com.br/public/assets/front/images/icons/android-icon-192x192.png">
+    </link>
+    <title>{title ? `${title} - ` : `Test E-commerce App`}</title>
+    {description &&
+    <meta name="description" content={description} />}
+</Head>
             <ThemeProvider theme={theme}>
                 <CssBaseline />
                 <AppBar className={classes.navBar}>
