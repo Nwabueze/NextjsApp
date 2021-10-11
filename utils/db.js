@@ -20,14 +20,15 @@ async function connect(){
 
     const LOCAL = process.env.LOCAL_MONGODB_URI;
     const LIVE = process.env.MONGO_CONN_STR;
-    const con = await mongoose.connect(LIVE, {
+    const con = await mongoose.connect(LOCAL, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true
     })
     
+    //console.log(LIVE);
     conn.isConnected = await con.connections;
-    console.log('db disconnected');
+    console.log('db connected');
 }
 
 async function disconnect(){

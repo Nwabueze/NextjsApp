@@ -27,8 +27,19 @@ const useStyles = makeStyles({
     section: {
         marginTop: 10,
         marginBottom: 10
-    }
-
+    },
+    form: {
+        maxWidth: 400, margin: '0 auto',
+    },
+    pt1: {paddingTop: 10,},
+    pt2: {paddingTop: 20,},
+    pt3: {paddingTop: 30,},
+    pt4: {paddingTop: 40,},
+    pt5: {paddingTop: 50,},
+    navbarButton: {color:"#ffff", textTransform:"initial"},
+    transparentBackGround: {backgroundColor: "transparent"},
+    hAuto: {marginBottom:"auto", height: "100%"},
 })
 
 export default useStyles;
+

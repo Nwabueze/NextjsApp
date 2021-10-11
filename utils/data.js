@@ -1,5 +1,20 @@
+import bcrypt from 'bcryptjs';
 const data = {
 
+    users: [
+        {
+            name: 'Samuel',
+            email: 'admin1@gmail.com',
+            password: bcrypt.hashSync('123456'),
+            isAdmin: true,
+        },
+        {
+            name: 'Samuel',
+            email: 'sam1@gmail.com',
+            password: bcrypt.hashSync('123456'),
+            isAdmin: false,
+        }
+    ],
     products: [
         {
             name: 'Free Shirt',
@@ -10,7 +25,7 @@ const data = {
             brand: 'Nike',
             rating: 3,
             numReviews: 38,
-            countStock: 36,
+            countInStock: 36,
             description: 'A popular shirt'
         },
         {
@@ -22,7 +37,7 @@ const data = {
             brand: 'Nike',
             rating: 2,
             numReviews: 28,
-            countStock: 43,
+            countInStock: 43,
             description: 'Fitted shirt for outdoor games'
         },
         {
@@ -34,7 +49,7 @@ const data = {
             brand: 'Nike',
             rating: 4,
             numReviews: 60,
-            countStock: 74,
+            countInStock: 74,
             description: 'Description for free shirt'
         },
         {
@@ -46,7 +61,7 @@ const data = {
             brand: 'Nike',
             rating: 5,
             numReviews: 9,
-            countStock: 30,
+            countInStock: 30,
             description: 'Description for free shirt'
         },
         {
@@ -58,7 +73,7 @@ const data = {
             brand: 'Zara',
             rating: 10,
             numReviews: 2,
-            countStock: 41,
+            countInStock: 41,
             description: 'Description for free shirt'
         },
         {
@@ -70,7 +85,7 @@ const data = {
             brand: 'Casley',
             rating: 6,
             numReviews: 4,
-            countStock: 40,
+            countInStock: 40,
             description: 'Description for classic pants'
         }
     ]
